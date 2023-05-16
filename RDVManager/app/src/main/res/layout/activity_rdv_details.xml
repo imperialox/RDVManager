@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:labelFor="@id/etTitle"
+            android:text="@string/lblTitle" />
+        <EditText
+            android:id="@+id/etTitle"
+            android:layout_width="286dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:hint="@string/TvNoST"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:autofillHints="Enter value" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lblDate" />
+
+        <EditText
+            android:id="@+id/etDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:ems="10"
+            android:hint="@string/TvNoST"
+            android:inputType="text"
+            android:onClick="showDatePicker"
+            tools:ignore="TouchTargetSizeCheck" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblTime"  />
+
+    <EditText
+        android:id="@+id/etTime"
+        android:layout_width="286dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:autofillHints="Enter value"
+        android:ems="10"
+        android:hint="@string/TvNoST"
+        android:inputType="text"
+        android:onClick="showTimePicker"
+        tools:ignore="TouchTargetSizeCheck" />
+</TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tvContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lblContact" />
+
+        <EditText
+            android:id="@+id/etContact"
+            android:layout_width="286dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:autofillHints="Enter value"
+            android:ems="10"
+            android:hint="@string/TvNoST"
+            android:inputType="text"
+            tools:ignore="TouchTargetSizeCheck" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tvphoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lblphoneNumber" />
+
+        <EditText
+            android:id="@+id/etphoneNumber"
+            android:layout_width="286dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:autofillHints="Enter value"
+            android:ems="10"
+            android:hint="@string/TvNoST"
+            android:inputType="text"
+            tools:ignore="TouchTargetSizeCheck" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lblAddress" />
+
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_width="286dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:autofillHints="Enter value"
+            android:ems="10"
+            android:hint="@string/TvNoST"
+            android:inputType="text"
+            tools:ignore="TouchTargetSizeCheck" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tvisDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lblisDone" />
+
+        <EditText
+            android:id="@+id/etisDone"
+            android:layout_width="286dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:autofillHints="Enter value"
+            android:ems="10"
+            android:hint="@string/TvNoST"
+            android:inputType="text"
+            tools:ignore="TouchTargetSizeCheck" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:id="@+id/tvId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_column="1"
+            android:layout_marginLeft="25dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:onClick="saveRDV"
+                android:text="@string/btnSave" />
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:onClick="onCancelClick"
+                android:text="@string/btnCancel" />
+
+        </LinearLayout>
+    </TableRow>
+</TableLayout>
+

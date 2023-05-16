@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">RDV Manager</string>
+    <string name="TvNoItems">No item found</string>
+    <string name="TvNoST"> Enter the value </string>
+    <string name="lblTitle">Title *</string>
+    <string name="lblDate">Date *</string>
+    <string name="lblContact">Contact *</string>
+    <string name="lblphoneNumber">Phone Number</string>
+    <string name="lblisDone">State</string>
+    <string name="lblAddress">Address</string>
+    <string name="lblTime">Time *</string>
+    <string name="btnSave">Save </string>
+    <string name="btnCancel">Cancel</string>
+    <string name="pickDate">pick Date</string>
+</resources>
